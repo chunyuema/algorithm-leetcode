@@ -1,6 +1,7 @@
 class Solution
 {
 public:
+    /* Solution without using priority queue */
     int largestSumAfterKNegations(vector<int> &nums, int k)
     {
         sort(nums.begin(), nums.end());
@@ -24,6 +25,7 @@ public:
         return res;
     }
 
+    /* Solution using priority queue */
     int largestSumAfterKNegationsWithPQ(vector<int> &nums, int k)
     {
         priority_queue<int, vector<int>, greater<int>> pq;
